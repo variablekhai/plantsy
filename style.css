@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+*{
+	margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 250px;
+  padding: 20px 30px;
+  border-bottom: thin solid #CCCCCC;
+}
+
+.logo {
+  width: 200px;
+}
+
+/* Search Box */
+.search_wrap{
+	width: 600px;
+}
+
+.search_wrap .search_box{
+	position: relative;
+	width: 600px;
+	height: 45px;
+}
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	font-size: 18px;
+  padding-right: 145px;
+  border-radius: 50px;
+  border: thin solid #CCCCCC;
+}
+
+.search_wrap .search_box .input:focus, .input-box:focus {
+  outline: none !important;
+  border-color: #20AC59;
+}
+
+.search_wrap .search_box .search-btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	background: #20AC59;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.search_wrap .search_box .search-btn:hover{
+	background: #21A055;	
+}
+
+.search_wrap .search_box .search-btn {
+	width: 125px;
+	height: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  border-radius: 50px;
+}
+
+/* Header Icons */
+.shop-bag, .user-img {
+  width: 30px;
+  height: 30px;
+}
+
+.user, .header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-icons {
+  gap: 50px;
+}
+
+.user {
+  gap: 10px;
+  font-size: 14px;
+}
+
+/* Intro - Text */
+.content {
+	position: relative;
+}
+
+.intro-header, .intro-text, .shop-now-btn {
+	position: absolute;
+	animation: fadeInUp;
+	animation-duration: 0.7s;
+}
+
+.intro-header {
+	font-weight: 800;
+	font-size: 60px;
+	top: 180px;
+	left: 70px;
+}
+
+.intro-text {
+	width: 500px;
+	font-size: 24px;
+	top: 260px;
+	left: 70px;
+}
+
+.shop-now-btn {
+	top: 410px;
+	left: 70px;
+	background-color: #20AC59;
+	padding: 15px 25px;
+	border-radius: 25px;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.shop-now-btn:hover {
+	background: #21A055;
+}
+
+.featured-text {
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.featured-cards {
+	display: flex;
+	justify-content: center;
+	gap: 45px;
+}
+
+.listed-plants-img {
+	width: 300px;
+	cursor: pointer;
+}
+
+.listed-plants-name {
+	color: #147AC0;
+}
+
+.listed-plants-name:hover {
+	color: #21A055;
+	cursor: pointer;
+}
+
+.free-ship {
+	background-color: lightgreen;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 5px 15px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	border-radius: 25px;
+	text-align: center;
+	width: max-content;
+}
+
+.listed-plants-status {
+	font-size: 14px;
+}
+
+.listings {
+	padding-bottom: 100px;
+}
+
+.checked {
+	color: orange;
+}
+
+.newsletter {
+	display: flex;
+	justify-content: center;
+	gap: 200px;
+	padding: 50px;
+	background-color: #F8F8F8;
+	border-top: thin solid #CCCCCC;
+}
+
+.input-box {
+	border-style: none;
+	background-color: #fff;
+	border: thin solid #CCCCCC;
+	padding: 10px 20px;
+	width: 450px;
+	border-radius: 25px;
+}
+
+.subscribe-box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-btn {
+	border-style: none;
+	cursor: pointer;
+	padding: 5px 10px;
+	color: #fff;
+	background-color: #20AC59;
+	position: absolute;
+	right: 0px;
+	padding: 11px 25px;
+	border-radius: 25px;
+}
+
+#validation {
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.footer {
+	border-top: thin solid #CCCCCC;
+	font-size: 14px;
+	padding: 20px;
+	text-align: center;
+}

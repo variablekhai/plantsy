@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_checkout.css">
+    <script src="checkout_js.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="src/icon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantsy | Checkout</title>
+</head>
+<body>
+    <div class="top-header">
+        <img class="logo" src="src/logo.svg">
+        <div class="search_wrap">
+            <div class="search_box">
+                <input type="text" class="input" placeholder="What plants are you looking for?">
+                <div class="search-btn">
+                    <p>Search</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-icons">
+            <div class="shopping-bag">
+                <img class="shop-bag" src="src/shop-bag.svg" style="cursor: pointer;">
+            </div>
+            <div class="user">
+                <img class="user-img" src="src/user-img.svg" style="cursor: pointer;">
+                <div class="login-options">
+                    <p class="login-btn">Log in</p>
+                    <p class="register-btn">Register</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title-header">
+        <h1 class="co-title">Checkout</h1>
+    </div>
+    <div class="content">
+        <div class="left-content">
+            <div class="billing">
+                <form method="post" action="#" name="billing-details">
+                    <h3 style="font-size: 22px;">Billing details</h3><br>
+                    <p>First name<a class="required">*</a><a id="fname-warn" class="warning-text"></a></p>
+                    <input type="text" id="first-name" onkeydown="validateValue(this.id)">
+                    <p>Last name<a class="required">*</a><a id="lname-warn" class="warning-text"></a></p>
+                    <input type="text" id="last-name" onkeydown="validateValue(this.id)">
+                    <p>Street address<a class="required">*</a><a id="address-warn" class="warning-text"></a></p>
+                    <input type="text" id="address-1" placeholder="House number and street name" onkeydown="validateValue(this.id)"><br>
+                    <input type="text" id="address-2" placeholder="Apartment, suite, unit, etc. (optional)">
+                    <p>Town / City<a class="required">*</a><a id="town-warn" class="warning-text"></a></p>
+                    <input type="text" id="town" onkeydown="validateValue(this.id)">
+                    <p>State<a class="required">*</a><a id="state-warn" class="warning-text"></a></p>
+                    <input type="text" id="state" onkeydown="validateValue(this.id)">
+                    <p>ZIP Code<a class="required">*</a><a id="zip-warn" class="warning-text"></a></p>
+                    <input type="number" id="zip" onkeydown="validateValue(this.id)">
+                    <p>Phone<a class="required">*</a><a id="phone-warn" class="warning-text"></a></p>
+                    <input type="number" id="phone" onkeydown="validatePhone()" placeholder="+60">
+                    <p>Email address<a class="required">*</a><a id="email-warn" class="warning-text"></a></p>
+                    <input type="text" id="email" onkeydown="validateEmail()" autocomplete="off">
+                    <br>
+                </form>
+            </div>
+            <br>
+            <input type="checkbox" id="subscribe">
+            <label for="subscribe">Subscribe to our newsletter</label>
+        </div>
+        <div class="right-content">
+            <h3 style="font-size: 22px;">Your order</h3>
+            <div class="order-summary">
+                <p class="product-title">PRODUCT</p>
+                <p class="product-name">Monstera Peru | fast-growing plant with thick and unusually stiff leaves x1</p>
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p class="price">RM49.00</p>
+                </div>
+                <div class="tax">
+                    <p>Tax</p>
+                    <p class="price">RM0.00</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p class="price">RM49.00</p>
+                </div>
+                <div class="credits">
+                    <input type="radio" id="payment-method">
+                    <label for="payment-method">Credit/Debit Card</label>
+                    <img src="src/cards.png" class="cards">
+                </div>
+            </div>
+            <input type="checkbox" id="tac">
+            <label for="tac">I have read and agree to the <a>terms and conditions</a></label><br>
+            <button type="submit" class="place-order" onclick="validateInfo()">Place order</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Khairul Azfar 2021, All rights reserved</p>
+        <p>Made for Individual Assignment, DCI2073 Web Programming (Lecturer: Madam Nurzety Aqtar Azuan)</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_item.css">
+    <script src="item_js.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="src/icon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantsy | Plant Marketplace</title>
+</head>
+<body>
+    <div class="top-header">
+        <a href="index.html"><img class="logo" src="src/logo.svg"></a>
+        <div class="search_wrap">
+            <div class="search_box">
+                <input type="text" class="input" placeholder="What plants are you looking for?">
+                <div class="search-btn">
+                    <p>Search</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-icons">
+            <div class="shopping-bag">
+                <img class="shop-bag" src="src/shop-bag.svg" style="cursor: pointer;">
+            </div>
+            <div class="user">
+                <img class="user-img" src="src/user-img.svg" style="cursor: pointer;">
+                <div class="login-options">
+                    <p class="login-btn">Log in</p>
+                    <p class="register-btn">Register</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-content">
+        <div class="item-img">
+            <img src="src/1x/plant-1.png">
+        </div>
+        <div class="item-info">
+            <p class="item-name">Monstera Peru</p>
+            <p class="free-ship">Free Shipping</p>
+            <p class="item-price">RM49.00</p>
+            <p class="item-description">Monstera Peru commonly known as Karstenianum is a rare but fast growing plant from Aroid family. 
+                It has spectacularly puckered, iridescent leaves that are unusually rigid- such a unique texture! It can be grown in a hanging basket but only when grown on a totem, a larger and healthier growth can be expected.
+            </p>
+            <p class="item-status">Status: In Stock</p>
+            <div class="main-buttons">
+                <div class="q-container">
+                    <button type="submit" id="q-down" class="q-button" onclick="reduceItem()">-</button>
+                    <input class="q-box" type="text" value="1" id="quantity">
+                    <button type="submit" id="q-up" class="q-button" onclick="addItem()">+</button>
+                </div>
+                <div class="buttons">
+                    <a href="checkout_page.html"><button id="atc-btn" type="submit" class="atc">Add to Cart</button></a>
+                    <a href="checkout_page.html"><button id="bn-btn" type="submit" class="bn">Buy Now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Khairul Azfar 2021, All rights reserved</p>
+        <p>Made for Individual Assignment, DCI2073 Web Programming (Lecturer: Madam Nurzety Aqtar Azuan)</p>
+    </div>
+</body>
+</html>

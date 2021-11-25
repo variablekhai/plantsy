@@ -1,0 +1,139 @@
+@import url("style.css");
+
+.co-title {
+	text-align: center;
+	font-size: 42px;
+	font-weight: 800;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.left-content {
+	width: 670px;
+}
+
+.billing input {
+	width: 670px;
+	padding: 15px;
+	border-radius: 5px;
+	border: thin solid #ccc;
+}
+
+.required {
+	font-weight: 800;
+	color: red;
+	margin-left: 2px;
+}
+
+#address-1 {
+	margin-bottom: 8px;
+}
+
+#subscribe, #tac {
+	transform: scale(1.5);
+	margin-right: 5px;
+}
+
+.left-content p {
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 8px;
+}
+
+.left-content input:focus {
+	outline: none !important;
+	border: thin solid #21A055;
+}
+
+.right-content {
+	width: 470px;
+}
+
+.order-summary {
+	margin-top: 30px;
+	background-color: #f6f6f6;
+	border: thin solid #ccc;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+.product-title {
+	font-weight: 800;
+	padding-bottom: 10px;
+	border-bottom: thin solid #ccc;
+}
+
+.product-name {
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+
+.subtotal {
+	font-weight: 800;
+}
+
+.subtotal .price, .total .price{
+	color: red;
+}
+
+.subtotal .price, .tax .price {
+	font-size: 14px;
+}
+
+.total {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.subtotal, .tax, .total {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	border-bottom: thin solid #ccc;
+	margin-bottom: 20px;
+}
+
+.credits {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 20px;
+}
+
+.right-content label a {
+	text-decoration: underline;
+	color: #0066CC;
+	cursor: pointer;
+}
+
+#tac {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.place-order {
+	width: 470px;
+	background-color: #21A055;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 800;
+	padding: 15px 20px;
+	cursor: pointer;
+}
+
+.warning-text {
+	color: red;
+}
