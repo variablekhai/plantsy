@@ -1,3 +1,5 @@
 Plantsy | Plant Marketplace
 
-A mockup website made for Individual Assignment (DCI2073 Web Programming)
+A mockup website made for Individual Assignment(DCI2073 Web Programming)
+
+Website Demo : https://variablekhai.github.io/plantsy-mockup/
